@@ -3,7 +3,7 @@ import StartScreen from './StartScreen';
 import DefeatScreen from './DefeatScreen';
 import ScenarioNumber from './ScenarioNumber';
 
-class ScenarioController extends Component {
+export default class ScenarioController extends Component {
 
   constructor(){
     super();
@@ -44,5 +44,3 @@ class ScenarioController extends Component {
     
   }
 }
-
-export default ScenarioController;

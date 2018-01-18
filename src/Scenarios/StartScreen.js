@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import './ScenarioStyling/StartScreen.css';
 import ScenarioController from './ScenarioController'
 
-class StartScreen extends Component {
+export default class StartScreen extends Component {
 
   onButtonPress(){
     this.props.scenarioNumber.increment();
-    alert(this.props.scenarioNumber.getValue());
   }
 
   render() {
@@ -26,5 +25,3 @@ class StartScreen extends Component {
     );
   }
 }
-
-export default StartScreen;

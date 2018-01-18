@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ScenarioStyling/DefeatScreen.css';
 
-class DefeatScreen extends Component {
+export default class DefeatScreen extends Component {
   constructor(){
     super();
   }
@@ -16,5 +16,3 @@ class DefeatScreen extends Component {
     );
   }
 }
-
-export default DefeatScreen;
