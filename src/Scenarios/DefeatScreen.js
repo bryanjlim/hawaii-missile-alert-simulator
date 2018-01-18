@@ -9,9 +9,10 @@ export default class DefeatScreen extends Component {
   render() {
     return (
       <div className="defeatScreen">
-        <body>
-          <h1>SENDING REAL MISSILE ALERT</h1>
+        <body class="defeatBody">
+          <h1 class="defeatTitle">SENDING REAL MISSILE ALERT...</h1>
         </body>
+        <footer class="defeatFooter">(You lose)</footer>
       </div>
     );
   }

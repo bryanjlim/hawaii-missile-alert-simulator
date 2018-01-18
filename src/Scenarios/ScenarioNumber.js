@@ -4,8 +4,8 @@ export default class ScenarioNumber {
         this.value = 0; 
     }
 
-    increment() {
-        this.value++; 
+    setValue(number) {
+        this.value=number; 
     }
 
     getValue(){
