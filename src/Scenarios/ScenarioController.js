@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StartScreen from './StartScreen';
+import ActualScreen from './1ActualScreen';
 import DefeatScreen from './DefeatScreen';
 import ScenarioNumber from './ScenarioNumber';
 
@@ -30,7 +31,7 @@ export default class ScenarioController extends Component {
     else if(sceneSelection === 1){ 
       return (
         <div className="App">
-          <DefeatScreen/>
+          <ActualScreen scenarioNumber={this.scenarioNumber}/>
         </div>
       );
     }

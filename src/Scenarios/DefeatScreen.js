@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './ScenarioStyling/DefeatScreen.css';
 
 export default class DefeatScreen extends Component {
-  constructor(){
-    super();
-  }
-
   render() {
     return (
       <div className="defeatScreen">

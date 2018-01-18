@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './ScenarioStyling/StartScreen.css';
-import ScenarioController from './ScenarioController'
 
 export default class StartScreen extends Component {
 
