@@ -35,10 +35,17 @@ export default class ScenarioController extends Component {
         </div>
       );
     }
-    else{
+    else if (sceneSelection === -1){
       return (
         <div className="App">
-          <DefeatScreen/>
+          <DefeatScreen scenarioNumber={this.scenarioNumber}/>
+        </div>
+      );
+    }
+    else{
+      return(
+        <div className="App">
+          <StartScreen scenarioNumber={this.scenarioNumber}/>
         </div>
       );
     }

@@ -4,7 +4,7 @@ import './ScenarioStyling/ActualScreen.css';
 export default class ActualScreen extends Component {
 
     fail(){
-        this.props.scenarioNumber.setValue(2); // Fail Scenario is #2
+        this.props.scenarioNumber.setValue(-1); // Fail Scenario is #-1
     }
 
     continue(){

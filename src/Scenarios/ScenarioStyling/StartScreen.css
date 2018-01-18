@@ -18,24 +18,25 @@
 
 .startTitle{
     color: black;
-    font-size:150px;
+    font-size:6vw;
     text-align:center;
     font-family:sans-serif; 
 }
 
 .startText{
     color:darkslategray;
-    font-size:40px;
+    font-size:1.5vw;
     text-align:center;
     font-family:sans-serif; 
 }
 
 .startButton {
     cursor: pointer; 
-    margin-top:50px; 
+    margin-top:50px;
+    margin-bottom:50px;  
     background-color: green; 
     color: white;
-    padding: 20px 40px;
+    padding: 2vw 4vw;
     text-align: center;
     display: inline-block;
     font-size: 20px;
