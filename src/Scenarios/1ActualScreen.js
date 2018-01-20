@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ScenarioStyling/ActualScreen.css';
+import GenericScenario from './GenericScenario';
 
 export default class ActualScreen extends GenericScenario {
     render() {
@@ -17,7 +18,7 @@ export default class ActualScreen extends GenericScenario {
                 <p><a href="#">1. TEST Message</a></p>
                 <p><a href="#" onClick={(e) => this.fail()}>PACOM (CDW) - STATE ONLY</a></p>
                 <p><a href="#">Tsunami Warning (CEM) - STATE ONLY</a></p>
-                <p><a href="#" onClick={(e) => this.continue()}>DRILL - PACOM (CDW) - STATE ONLY</a></p>
+                <p><a href="#" onClick={(e) => this.succeed()}>DRILL - PACOM (CDW) - STATE ONLY</a></p>
                 <p><a href="#">Landslide - Hana Road Closure</a></p>
                 <p><a href="#">Amber Alert DEMO TEST</a></p>
                 <p><a href="#">High Surf Warning North Shores</a></p>
