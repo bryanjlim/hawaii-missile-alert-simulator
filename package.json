@@ -12,5 +12,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanjlim/hawaii-missile-alert-simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanjlim/hawaii-missile-alert-simulator/issues"
+  },
+  "homepage": "https://github.com/bryanjlim/hawaii-missile-alert-simulator#readme"
 }

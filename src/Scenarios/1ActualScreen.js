@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
 import './ScenarioStyling/ActualScreen.css';
 
-export default class ActualScreen extends Component {
-
-    fail(){
-        this.props.scenarioNumber.setValue(-1); // Fail Scenario is #-1
-    }
-
-    continue(){
-        this.props.scenarioNumber.setValue(2); // Next Scenario is #2
-    }
-
+export default class ActualScreen extends GenericScenario {
     render() {
         
         return (
