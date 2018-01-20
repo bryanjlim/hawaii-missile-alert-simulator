@@ -53,7 +53,7 @@ export default class ScenarioController extends Component {
     else{
       return(
         <div className="App">
-          <StartScreen scenarioNumber={this.scenarioNumber}/>
+          <StartScreen scenarioNumber={this.props.scenarioNumber}/>
         </div>
       );
     }

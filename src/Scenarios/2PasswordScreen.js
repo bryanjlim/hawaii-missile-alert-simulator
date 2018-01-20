@@ -23,10 +23,8 @@ export default class PasswordScreen extends GenericScenario {
 
     handleSubmit(event) {
         event.preventDefault();
-        if(!this.state.password == 'password123'){
-            alert("Incorrect Password (hint: password123");
-        }
-        else{
+        
+        if(this.state.password == "password123"){
             if(this.state.select == 'actual'){
                 alert("You have selected to send the actual missile alert.")
                 this.fail(); 
@@ -36,7 +34,11 @@ export default class PasswordScreen extends GenericScenario {
                 this.succeed(); 
             }
         }
-        this.state.select = 'actual';
+        else{
+            alert("Incorrect Password (hint: password123)");
+            this.state.password = "";
+            this.state.select = 'actual';
+        }
     }
 
     render() {
