@@ -10,6 +10,7 @@ export default class ScenarioController extends Component {
 
   constructor(){
     super();
+	this.scenarios = [<StartScreen />, <ActualScreen />, <PasswordScreen />];
   }
 
   componentDidMount() {
@@ -20,43 +21,26 @@ export default class ScenarioController extends Component {
   }
 
   render() {
-    let sceneSelection = this.props.scenarioNumber.getValue(); 
-
-    if(sceneSelection === 0){ // Starting Screen 
-      return (
-        <div className="App">
-          <StartScreen scenarioNumber={this.props.scenarioNumber}/>
-        </div>
-      );
-    }
-    else if(sceneSelection === 1){ 
-      return (
-        <div className="App">
-          <ActualScreen scenarioNumber={this.props.scenarioNumber}/>
-        </div>
-      );
-    }
-    else if(sceneSelection === 2){ 
-      return (
-        <div className="App">
-          <PasswordScreen scenarioNumber={this.props.scenarioNumber}/>
-        </div>
-      );
-    }
-    else if (sceneSelection === -1){
+    let sceneSelection = this.props.scenarioNumber.getValue(); 	
+    if (sceneSelection === -1){
       return (
         <div className="App">
           <DefeatScreen scenarioNumber={this.props.scenarioNumber}/>
         </div>
       );
-    }
-    else{
-      return(
-        <div className="App">
-          <StartScreen scenarioNumber={this.props.scenarioNumber}/>
-        </div>
+    } else if(sceneSelection >= this.scenarios.length){
+		this.props.scenarioNumber.setValue(0);
+		sceneSelection = this.props.scenarioNumber.getValue();
+	}
+	var props = {scenarioNumber: this.props.scenarioNumber};
+		var scenarioSelect = React.cloneElement(this.scenarios[sceneSelection], props);
+      return (  
+		<div className="App">	  
+		{scenarioSelect}
+		</div>
       );
-    }
+
+
     
   }
 }
