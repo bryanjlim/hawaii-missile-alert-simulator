@@ -24,7 +24,7 @@ export default class PasswordScreen extends GenericScenario {
     handleSubmit(event) {
         event.preventDefault();
         
-        if(this.state.password == "password123"){
+        if(this.hash(this.state.password) == "185355816"){
             if(this.state.select == 'actual'){
                 alert("You have selected to send the actual missile alert.")
                 this.fail(); 
@@ -70,4 +70,20 @@ export default class PasswordScreen extends GenericScenario {
             </div> 
         );
     }
+	
+	hash(s) {
+    /* Simple hash function. */
+    var a = 1, c = 0, h, o;
+    if (s) {
+        a = 0;
+        /*jshint plusplus:false bitwise:false*/
+        for (h = s.length - 1; h >= 0; h--) {
+            o = s.charCodeAt(h);
+            a = (a<<6&268435455) + o + (o<<14);
+            c = a & 266338304;
+            a = c!==0?a^c>>21:a;
+        }
+    }
+    return String(a);
+};
 }

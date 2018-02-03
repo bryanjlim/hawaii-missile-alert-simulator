@@ -5,16 +5,16 @@ import DefeatScreen from './DefeatScreen';
 import PasswordScreen from './2PasswordScreen';
 import GenericScenario from './GenericScenario'
 import ScenarioNumber from './ScenarioNumber';
-
+import IndexScreen from './3IndexScreen';
 export default class ScenarioController extends Component {
 
   constructor(){
     super();
-	this.scenarios = [<StartScreen />, <ActualScreen />, <PasswordScreen />];
+	this.scenarios = [<StartScreen />,  <ActualScreen />, <PasswordScreen />, <IndexScreen />];
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
+    this.interval = setInterval(() => this.setState({ time: Date.now() }), 20);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
