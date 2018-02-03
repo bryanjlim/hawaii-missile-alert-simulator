@@ -20,7 +20,7 @@ export default class StartScreen extends Component {
             <div class = "startTextWrapper">
 
               <p class="startText">A simulator for the operation of the Hawaii Missile Alert System interface... With some additional tweaks for empahsis. </p>
-              <p class="startText"><strong>Why? </strong><a href="https://www.yahoo.com/news/hawaii-apos-missile-alert-gaffe-142408797.html">Because important government interfaces shouldn't be allowed to fail us.</a>  We can't let important systems like this have such high room for machine-caused human error.</p>
+              <p class="startText"><strong>Why? </strong><a href="https://www.yahoo.com/news/hawaii-apos-missile-alert-gaffe-142408797.html">Because important government interfaces shouldn't be allowed to fail us.</a> User interface should serve users, not hinder them.</p>
             
             </div>
 
