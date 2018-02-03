@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import StartScreen from './StartScreen';
-import ActualScreen from './1ActualScreen';
 import DefeatScreen from './DefeatScreen';
+import ActualScreen from './1ActualScreen';
 import PasswordScreen from './2PasswordScreen';
+import IndexScreen from './3IndexScreen';
+import VictoryScreen from './VictoryScreen';
 import GenericScenario from './GenericScenario'
 import ScenarioNumber from './ScenarioNumber';
 import IndexScreen from './3IndexScreen';
@@ -10,7 +12,7 @@ export default class ScenarioController extends Component {
 
   constructor(){
     super();
-	this.scenarios = [<StartScreen />,  <ActualScreen />, <PasswordScreen />, <IndexScreen />];
+	this.scenarios = [<StartScreen />, <ActualScreen />, <PasswordScreen />, <IndexScreen />, <VictoryScreen />];
   }
 
   componentDidMount() {
